@@ -1,5 +1,7 @@
 source :rubygems
 
+gem "thin"
+
 gemspec
 
 group :test do
