@@ -6,7 +6,7 @@ require 'resque/server'
 
 # Set the RESQUECONFIG env variable if you've a `resque.rb` or similar
 # config file you want loaded on boot.
-File.expand_path(File.join(File.dirname(__FILE__), 'config', 'redis'))
+require File.expand_path(File.join(File.dirname(__FILE__), 'config', 'redis'))
 
 # HTTP Auth For Resque Console
 AUTH_PASSWORD = ENV["RESQUE_PASSWORD"]
